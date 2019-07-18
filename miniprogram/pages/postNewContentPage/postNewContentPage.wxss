@@ -1,0 +1,128 @@
+/* miniprogram/pages/postNewContentPage/postNewContentPage.wxss */
+.page {
+}
+
+.item-contain {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-head {
+  width: 750rpx;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.textArea {
+  width: 95%;
+  background-color: white;
+  text-indent:25rpx
+}
+
+.item-body {
+  display: flex;
+  flex-direction: column;
+  margin: 4rpx 24rpx;
+}
+
+.body-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-text {
+  margin: 10rpx;
+  font-size:32rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+}
+.warnning-text {
+  margin: 5rpx;
+  font-size:22rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(156,162,187,1);
+}
+
+.addPhoto {
+  flex-shrink: 0;
+  width:117rpx;
+  height:117rpx;
+  background:rgba(249,249,249,1);
+  border:1rpx solid rgba(238,238,238,1);
+  border-radius:5rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.addPhoto image {
+  height: 40rpx;
+  width: 35rpx;
+}
+
+.addPhoto text {
+  font-size:20rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(102,102,102,1);
+}
+
+.photo {
+  display: flex;
+  justify-content: flex-start;
+
+}
+.selectd-box {
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.selectd-photo{
+  width:117rpx;
+height:117rpx;
+border-radius:5px;
+margin-bottom: 10rpx;
+}
+
+.removeBtn {
+  width:48rpx;
+  height:48rpx;
+  position: relative;
+  top: -77rpx;
+  right: 49rpx;
+}
+
+.item-foot {
+  margin: 20rpx 10rpx;
+}
+
+.scope-radio{
+  font-size:26rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(156,162,187,1);
+  border-radius: 50%;
+}
+
+.btn-box {
+  margin-top: 240rpx;
+}
+
+.submitButton {
+  width:400rpx;
+  height:88rpx;
+  background:#3B49E0;
+  box-shadow:0rpx 0rpx 30rpx 0rpx #3B4990;
+  border-radius:44rpx;
+  color: white;
+  margin-bottom: 25%;
+}
+
+
+

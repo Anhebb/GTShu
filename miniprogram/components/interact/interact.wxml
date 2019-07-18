@@ -1,0 +1,28 @@
+<!--components/interact/interact.wxml-->
+<view class="item-contain">
+  <view class="item-top">
+    <view class="time-mark">
+    <text>{{time}}</text>
+    </view>
+
+   < slot></slot>
+  </view>
+
+  <view class="item-middle">
+    <view class="user-name">
+      <text>{{userName}}：</text>
+    </view>
+
+    <view class=" middle-comment">
+      <text>{{commentText}}</text>
+    </view>
+
+  </view>
+  <view class="item-bottom">
+    <view class="dynamic">
+      <text>{{dynamicContent}}</text>
+    </view>
+  </view>
+
+</view>
+

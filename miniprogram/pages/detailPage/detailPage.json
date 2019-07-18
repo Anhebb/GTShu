@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "dynamic": "../../components/dynamic/dynamic",
+    "singleComment": "../../components/singleComment/singleComment"
+  }
+}

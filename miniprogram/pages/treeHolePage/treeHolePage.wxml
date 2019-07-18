@@ -1,0 +1,53 @@
+<view class="contain">
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on1' : ''}}" data-current="0" bindtap="swichNav">树洞广场
+    </view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on2' : ''}}" data-current="1" bindtap="swichNav">我的树洞
+    </view>
+  </view>
+
+
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 1}}px" bindchange="bindChange">  
+    <!-- 树洞广场 -->
+    <swiper-item class="swiper-item">
+      <!-- 空页面 -->
+      <view class="{{showTreSqu==0? 'view_null':'view_false'}}">
+        <image src="../../images/treeHoldPage/null.png"></image>
+        <text class='text_null'>{{text}}</text>
+      </view>
+
+      <!-- 有数据页面 -->
+      <view class="{{showTreSqu==1? 'view_true':'view_false'}}">
+
+       <scroll-view scroll-y="true" class="scoll-h">
+       <view wx:for-items="{{listData}}" wx:for-item="item"> 
+       <dynamic contentText="{{item.content}}" contentPhotoUrl="{{item.photoList}}" time="{{item.time}}" userPhotoUrl="{{item.avatarUrl}}" userName="{{item.name}}" postId="{{item._id}}" isClickable='true' likeCount="{{item.likeCnt}}"> </dynamic>
+       </view>
+      </scroll-view>
+
+
+      </view>
+   </swiper-item> 
+
+   <!-- 我的树洞 -->
+     <swiper-item class="swiper-item">
+      <!-- 空页面 -->
+      <view class="{{showMyTree==0? 'view_null':'view_false'}}">
+        <image src="../../images/treeHoldPage/null.png"></image>
+        <text class='text_null'>{{text}}</text>
+      </view>
+
+      <!-- 有数据页面 -->
+      <view class="{{showMyTree==1? 'view_true':'view_false'}}">
+      
+        <scroll-view scroll-y="true" class="scoll-h">
+       <view wx:for-items="{{listData}}" wx:for-item="item"> 
+       <dynamic contentText="{{item.content}}" contentPhotoUrl="{{item.photoList}}" time="{{item.time}}" userPhotoUrl="{{item.avatarUrl}}" userName="{{item.name}}" postId="{{item._id}}" isClickable='true'> </dynamic>
+       </view>
+      </scroll-view>
+
+      </view>
+   </swiper-item> 
+  </swiper>
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>

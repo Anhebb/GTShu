@@ -1,0 +1,49 @@
+<!--miniprogram/pages/postNewContentPage/postNewContentPage.wxml-->
+<view class="item-contain">
+  <form>
+    <view class="item-head">
+      <textarea class='textArea' placeholder='请填写话题内容（不少于10个字）' bindinput="textChanged"></textarea>
+    </view>
+
+    <view class='item-body'>
+
+      <view class="body-title">
+        <text class="title-text">添加图片</text>
+        <text class="warnning-text">图片最多不超过9张</text>
+      </view>
+
+      <view class="photo">
+
+        <view class='addPhoto' bindtap='handleAddPhoto'>
+          <image src='../../images/postNewContentPage/camera.png'></image>
+          <text>添加图片</text>
+        </view>
+        
+        <view class="selectd-box">
+          <view class='singlePhotoContainer' wx:for='{{photoList}}' wx:key='{{item}}'>
+            <image src='{{item}}' class='selectd-photo'></image>
+            <image src='../../images/postNewContentPage/remove.png' class='removeBtn' bindtap='removeImage' data-path='{{item}}'></image>
+          </view>
+        </view>
+      
+      </view>
+
+    </view>
+
+    <view class="item-foot">
+
+      <view class="scope">
+        <radio-group bindchange='handleRadioChange'>
+          <radio value='all' checked='true' class="scope-radio">树洞广场和我的树洞，对所有人可见。</radio>
+          <radio value='myself' class="scope-radio">我的树洞，仅对自己可见。</radio>
+        </radio-group>
+      </view>
+    </view>
+
+    <view class="btn-box">
+        <button class='submitButton' bindtap='handleSubmit'>发布</button>
+      </view>
+
+
+  </form>
+</view>

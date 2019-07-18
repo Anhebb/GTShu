@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "like": "../../components/giveLike/giveLike"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "点赞",
+  "backgroundColor": "#ccc",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh":true
+}

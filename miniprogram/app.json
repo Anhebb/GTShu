@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/getLikePage/getLikePage",
+    "pages/commentPage/commentPage",
+    "pages/postNewContentPage/postNewContentPage",
+    "pages/authPage/authPage",
+    "pages/detailPage/detailPage",
+    "pages/treeHolePage/treeHolePage",
+    "pages/messagePage/messagePage"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "给他树",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#979795",
+    "selectedColor": "#3B49E0",
+    "list": [
+      {
+        "pagePath": "pages/treeHolePage/treeHolePage",
+        "text": "首页",
+        "iconPath": "components/tabbarComponent/icon/树洞1.png",
+        "selectedIconPath": "components/tabbarComponent/icon/树洞2.png"
+      },
+      {
+        "pagePath": "pages/messagePage/messagePage",
+        "text": "消息",
+        "iconPath": "components/tabbarComponent/icon/消息1.png",
+        "selectedIconPath": "components/tabbarComponent/icon/消息2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,59 @@
+/* miniprogram/components/singleComment/singleComment.wxss */
+.main_container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 750rpx;
+  margin: 0rpx 0;
+  border-bottom: 1rpx solid #ccc;
+  box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.item-top {
+  width: 92%;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  margin-right: 40rpx;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+}
+
+.user-photo {
+  width: 86rpx;
+  height: 86rpx;
+  border-radius: 50%;
+}
+.user-name {
+  margin-left: 10rpx;
+  font-size:28rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+}
+
+.top-right {
+  display: flex;
+  align-items: center
+}
+
+.time {
+  font-size:22rpx;
+font-family:SourceHanSansCN-Regular;
+font-weight:400;
+color:rgba(156,162,187,1);
+}
+
+.item-bottom {
+margin: 4rpx 40rpx 30rpx 117rpx;
+}
+
+.item-bottom text {
+  font-size:26rpx;
+font-family:SourceHanSansCN-Regular;
+font-weight:400;
+color:rgba(102,102,102,1);
+}

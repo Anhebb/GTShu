@@ -1,0 +1,8 @@
+<!--miniprogram/pages/authPage/authPage.wxml-->
+<view class="container">
+  <view class="sec_container">
+    <image class="hintImage" src="../../images/authPage/hint.png"></image>
+    <text class="hintText">小程序需要您的微信授权才能使用哦！</text>
+  </view>
+  <button class="loginButton" open-type='getUserInfo' bindgetuserinfo='handleAuthLogin'>微信登陆授权</button>
+</view>

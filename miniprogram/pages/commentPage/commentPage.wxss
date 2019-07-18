@@ -1,0 +1,96 @@
+.contain{
+  display: flex;
+  flex-direction: column;
+  background:rgba(255,255,255,1);
+}
+.swiper-tab{
+  margin-top: 3vh;
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid rgb(206, 208, 218);
+height:7vh;
+  }
+.swiper-tab-list{ 
+  font-size: 30rpx;
+  display: inline-block;
+  width: 50%;
+  color:rgba(156,162,187,1);
+}
+.on1{ 
+
+  height: 60rpx;
+  font-size:40rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(59,73,224,1);
+  line-height:40rpx;
+  border-bottom: 5rpx solid  blue;
+
+  }
+.on2{ 
+  height: 60rpx;
+  font-size:40rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(59,73,224,1);
+  line-height:40rpx;
+  border-bottom: 5rpx solid  blue;
+  }
+
+.swiper-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000rpx;
+}
+.swiper-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.view_null{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view_false{
+  display: none;
+}
+.view_true{
+  display: block;
+}
+.text_null{
+  width:141rpx;
+  height:34rpx;
+  font-size:36rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(156,162,187,1);
+  line-height:36rpx;
+}
+.img_null{
+    width:653rpx;
+    height:756rpx;
+}
+
+.scoll-h{
+  height:90vh;
+  }
+
+
+  .del-btn::after {
+    border: none;
+  }
+  
+  .del-btn {
+    width: 150rpx;
+    height: 70rpx;
+     background-color: #fff;
+     border-radius: 50rpx;
+     border: 2rpx solid #3B49E0;
+     line-height: 65rpx
+
+  }
+  

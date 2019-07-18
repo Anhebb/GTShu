@@ -1,0 +1,22 @@
+<view class="tabbar_box " style="background-color:{{tabbar.backgroundColor}}">
+  <block wx:for="{{tabbar.list}}" wx:key="{{item.pagePath}}">
+  <!-- 发布话题按钮 -->
+    <navigator wx:if="{{item.isSpecial}}" class="tabbar_nav" hover-class="none" url="{{item.pagePath}}" style="color:{{tabbar.color}}" open-type="navigate">
+      <view class='special-wrapper'><image class="tabbar_icon" src="{{item.iconPath}}"></image></view>
+      <image class='special-text-wrapper'></image>
+      <text class="tabbar_text">{{item.text}}</text>
+    </navigator>
+
+    <!-- 菜单按钮 -->
+    <navigator wx:else class="tabbar_nav" hover-class="none" url="{{item.pagePath}}" style="color:{{item.selected ? tabbar.selectedColor : tabbar.color}}" open-type="switchTab">
+      <image class="tabbar_icon" src="{{item.selected ? item.selectedIconPath : item.iconPath}}"></image>
+      <text class="tabbar_text">{{item.text}}</text>
+    </navigator>
+    <!-- 判断有无新消息，有则判断消息是否超过两位数 -->
+  </block>
+
+    <view class="null">
+      <text class="{{news_num>9? 'news_text2':'news_text1'}}">{{news_num}}</text>
+    </view>
+
+</view>

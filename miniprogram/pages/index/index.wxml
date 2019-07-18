@@ -1,0 +1,11 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="item-contain">
+<view class="warn-text">
+<text> GTShu小程序</text>
+<text>正在全速检测您的登录状态，请您稍候</text>
+</view>
+<view class="wait-photo">
+  <image src="../../images/index/wait.gif"></image>
+</view>
+
+</view>

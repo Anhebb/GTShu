@@ -1,0 +1,57 @@
+/* miniprogram/pages/detailPage/detailPage.wxss */
+
+
+.container_foot {
+  width: 750rpx;
+  display: flex;
+  box-sizing: border-box;
+  box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  right: 0px;
+  background-color: #ffffff;
+  bottom:0px;
+
+  
+ }
+
+ .item-box {
+   margin-left: 29rpx;
+   margin-top:20rpx;
+   margin-bottom: 20rpx; 
+   margin-right: 23rpx;
+   background:rgb(230, 230, 230);
+   display: flex;
+   /* flex-grow: 4; */
+   align-items: center;
+   width:555rpx;
+height:62rpx;
+   border-radius: 30rpx
+ }
+
+ .content-icon {
+   margin: 2rpx  30rpx;
+   width: 30rpx;
+   height: 24rpx;
+ }
+
+ .content-input {
+   width: 71%;
+   margin-top: 15rpx;
+   margin-bottom: 15rpx;
+ }
+
+ .publish {
+   margin-left: 30rpx;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+ }
+
+ .publish text {      
+    font-size:28rpx;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(59,73,224,1);
+
+ }

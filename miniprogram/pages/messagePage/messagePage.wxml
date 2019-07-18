@@ -1,0 +1,14 @@
+<view class="contain">
+  <view wx:for="{{list}}" wx:key="{{imgurl}}" class="item_view" data-current='{{index}}' bindtap='commentOrlike'>
+    <view class="view_1">
+      <image src="{{item.imgurl}}" class="image_1"></image>
+      <text>{{item.text}}</text>
+      <view class="view_null">
+        <text>{{item.num}}</text>
+      </view>
+    </view>
+    <image src="{{item.jturl}}" class="image_2"></image>
+  </view>
+  <tabbar tabbar="{{tabbar}}" news_num="{{sum_num}}"></tabbar>
+</view>
+ 

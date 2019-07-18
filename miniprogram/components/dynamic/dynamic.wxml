@@ -1,0 +1,43 @@
+<view class="item-contain">
+
+  <view class="item-head">
+
+    <view class="user-info">
+        <image src="{{userPhotoUrl}}" class="user-photo"></image>
+        <text class="user-name">{{userName}}</text>
+    </view>
+
+    <view class="time">
+      <text>{{time}}</text>
+    </view>
+
+  </view>
+
+  <view class="item-body" data-postid="{{postId}}" bindtap="{{isClickable?'goToDetailPage':''}}">
+
+    <view class="content-text">
+      <text>{{contentText}}</text>
+    </view> 
+
+    <view class="content-photo">
+      <image wx:for="{{contentPhotoUrl}}" src="{{item}}" bindtap="preview"  data-src="{{item}}" wx:key="{{item}}"></image>
+    
+    </view>
+
+  </view>
+
+  <view class="item-foot">
+
+    <view class="comment">
+    <image src="../../images/dynamic/comment.png" class="foot-icon"></image>
+    <text class="foot-text">{{conmentCount}}</text>
+    </view>
+
+    <view class="like" bindtap='likeUpvote'>
+    <image src="../../images/dynamic/like.png" class="foot-icon"></image>
+    <text class="foot-text">{{likeCount}}</text>
+    </view>
+
+  </view>
+
+</view>

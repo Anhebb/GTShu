@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "dynamic": "../../components/dynamic/dynamic",
+    "interact": "../../components/interact/interact"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "评论",
+  "backgroundColor": "#ccc",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true
+}

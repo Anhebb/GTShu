@@ -1,0 +1,20 @@
+<!--miniprogram/pages/detailPage/detailPage.wxml-->
+<view class="item-contain">
+  <view class="container_head" bindtap="commentThisPost">
+    <dynamic contentText="{{curPostDetail.content}}" contentPhotoUrl="{{curPostDetail.photoList}}" time="{{curPostDetail.time}}" userPhotoUrl="{{curPostDetail.avatarUrl}}" userName="{{curPostDetail.name}}" postId="{{curPostDetail._id}}"></dynamic>
+  </view>
+  <view class="container_body" bindtap="commentThisUser" wx:for="{{allComments}}" wx:for-item="item" wx:key="item._id" data-userid="{{item.authorUserId}}" data-username="{{item.name}}" data-commentid="{{item._id}}">
+    <singleComment avatarUrl="{{item.avatarUrl}}" name="{{item.name}}" text="{{item.text}}" time="{{item.time}}"></singleComment>
+  </view>
+  <view class="container_foot">
+    <view class="item-box">
+      <image src="../../images/detailPage/content.png" class="content-icon"></image>
+        <input placeholder='{{inputHintText}}' bindinput='handleInput' class="content-input"></input>
+    </view>
+
+    <view class="publish">
+    <text bindtap="handleComment">发表</text>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<!--miniprogram/components/singleComment/singleComment.wxml-->
+<view class="main_container">
+  <view class="item-top">
+    <view class="top-left">
+      <image src="{{avatarUrl}}" class="user-photo"></image>
+      <text class="user-name">{{name}}</text>
+    </view>
+
+    <view class="top-right">
+      <text class="time">{{time}}</text>
+    </view>
+  </view>
+
+  <view class="item-bottom">
+    <text>{{text}}</text>
+  </view>
+</view>
